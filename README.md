@@ -17,7 +17,7 @@ Este repositorio contiene una suite de pruebas altamente escalable y parametriza
 
 - ♻️ Sistema de definición de menús reutilizable y dinámico.
 - 📚 Separación clara por capas: configuración, tipos, páginas y tests.
-- 🧵 Encapsulación avanzada con `MenuPage` para gestionar la lógica de interacción paso a paso.
+- 🧵 Encapsulación avanzada y escalable con `MenuPage` para gestionar la lógica de interacción paso a paso en la navegación del menú.
 - ⚙️ Capaz de ejecutar docenas de combinaciones (device × idioma) en paralelo con configuración mínima.
 
 ---

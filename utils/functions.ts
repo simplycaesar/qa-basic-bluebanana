@@ -1,4 +1,4 @@
-// utils/i18nUtils.ts
+// utils/functions.ts
 import { i18n } from '../assets/i18n';
 import type { LanguageCode } from '../types/types';
 

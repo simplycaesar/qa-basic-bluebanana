@@ -1,6 +1,6 @@
 // assets/menuOptions.ts
 
-import { extractFromI18n } from '../utils/i18nUtils';
+import { extractFromI18n } from '../utils/functions';
 import type { MenuOption } from '../types/types';
 
 export const menuOptions: Record<string, MenuOption> = {

@@ -1,14 +1,18 @@
-/* // tests/login.spec.ts
+// tests/login.spec.ts
 
 import { test, expect } from '@playwright/test';
+import { LoginPage } from '../pages/LoginPage';
 
-test('Login con credenciales válidas', async ({ page }) => {
-  await page.goto('/account/login');
+const VALID_EMAIL = process.env.LOGIN_EMAIL!;
+const VALID_PASSWORD = process.env.LOGIN_PASSWORD!;
 
-  await page.getByLabel('Correo electrónico').fill('testuser@example.com');
-  await page.getByLabel('Contraseña').fill('password123');
-  await page.getByRole('button', { name: /Iniciar sesión/i }).click();
+test.describe('Login', () => {
+  test('Usuario puede iniciar sesión correctamente', async ({ page }) => {
+    const loginPage = new LoginPage(page);
 
-  await expect(page.getByText(/Mi cuenta|Mis pedidos/i)).toBeVisible();
+    await page.goto('/');
+    await loginPage.openLoginForm();
+    //await loginPage.login(VALID_EMAIL, VALID_PASSWORD);
+
+  });
 });
- */

@@ -25,6 +25,13 @@ export const i18n = {
             urlEsperadaMujerRebajasHasta40: '/collections/hasta-40-women',
             tituloMujerRebajasHasta40: 'HASTA 40% MUJER – Blue Banana Brand',
         },
+        login: {
+            linkText: 'Acceder', // en
+            emailLabel: 'Correo electrónico',
+            passwordLabel: 'Contraseña',
+            submit: 'Iniciar sesión',
+            successText: 'Mi cuenta', // O nombre del usuario
+        }
     },
     en: {
         menu: {
@@ -50,5 +57,12 @@ export const i18n = {
             urlEsperadaMujerRebajasHasta40: '/collections/hasta-40-men',
             tituloMujerRebajasHasta40: 'HASTA 40% HOMBRE – Blue Banana Brand',
         },
+        login: {
+            linkText: 'Sign in',
+            emailLabel: 'Email',
+            passwordLabel: 'Password',
+            submit: 'Log in',
+            successText: 'My account',
+        }
     }
 };
