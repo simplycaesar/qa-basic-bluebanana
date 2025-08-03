@@ -2,13 +2,13 @@
 
 import { test, expect } from '@playwright/test';
 import { MenuPage } from '../pages/MenuPage';
-import { menuOptions } from '../assets/menuOptions';
+import { menuConfig } from '../assets/config';
 
 test.describe('Navegación', () => {
     test('Cada opción de menú lleva a la página correcta', async ({ page }) => {
-        const menuPage = new MenuPage(page, menuOptions);
+        const menuPage = new MenuPage(page);
 
-        for (const optionKey of Object.keys(menuOptions) as Array<keyof typeof menuOptions>) {
+        for (const optionKey of Object.keys(menuConfig) as Array<keyof typeof menuConfig>) {
             await test.step(`Click en opción del menú: ${optionKey}`, async () => {
 
                 await page.goto('/', {

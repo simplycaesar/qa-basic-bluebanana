@@ -26,43 +26,13 @@ export const i18n = {
             tituloMujerRebajasHasta40: 'HASTA 40% MUJER – Blue Banana Brand',
         },
         login: {
-            linkText: 'Acceder', // en
+            loginUrl: '/account/login',
+            loginTitle: 'Cuenta – Blue Banana Brand',
+            loggedUrl: '/account/login',
+            loggedTitle: '/account/login',
             emailLabel: 'Correo electrónico',
             passwordLabel: 'Contraseña',
-            submit: 'Iniciar sesión',
-            successText: 'Mi cuenta', // O nombre del usuario
-        }
-    },
-    en: {
-        menu: {
-            rebajas: 'Sale', // Nivel 1
-
-            rebajasHombre: 'Men', // Nivel 2
-            rebajasHombreHasta50: 'Up to 50%', // Nivel 3
-            urlEsperadaRebajasHombreHasta50: '/en/collections/up-to-50-men',
-            tituloRebajasHombreHasta50: 'Up to 50% off Men | Blue Banana',
-
-            rebajasHombreHasta40: 'Hasta 40%', // Nivel 3
-            urlEsperadaRebajasHombreHasta40: '/collections/hasta-40-men',
-            tituloRebajasHombreHasta40: 'HASTA 40% HOMBRE – Blue Banana Brand',
-
-            mujer: 'Mujer', // Nivel 1
-
-            mujerRebajas: 'Rebajas', // Nivel 2
-            mujerRebajasHasta50: 'Hasta 50%', // Nivel 3
-            urlEsperadaMujerRebajasHasta50: '/collections/hasta-50-men',
-            tituloMujerRebajasHasta50: 'HASTA 50% HOMBRE – Blue Banana Brand',
-
-            mujerRebajasHasta40: 'Hasta 40%', // Nivel 3
-            urlEsperadaMujerRebajasHasta40: '/collections/hasta-40-men',
-            tituloMujerRebajasHasta40: 'HASTA 40% HOMBRE – Blue Banana Brand',
-        },
-        login: {
-            linkText: 'Sign in',
-            emailLabel: 'Email',
-            passwordLabel: 'Password',
-            submit: 'Log in',
-            successText: 'My account',
+            loginButton: 'Iniciar sesión'
         }
     }
 };

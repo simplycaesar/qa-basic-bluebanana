@@ -23,3 +23,13 @@ export type LocatorStrategy =
     | { type: 'id'; id: string }
     | { type: 'testid'; testId: string }
     | { type: 'text'; text: Record<LanguageCode, string> };
+
+export type LoginOption = {
+    loginUrl: Record<LanguageCode, string>;
+    loginTitle: Record<LanguageCode, string>;
+    loggedUrl: Record<LanguageCode, string>;
+    loggedTitle: Record<LanguageCode, string>;
+    emailLabel: Record<LanguageCode, string>;
+    passwordLabel: Record<LanguageCode, string>;
+    loginButton: Record<LanguageCode, string>;
+};

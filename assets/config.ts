@@ -1,9 +1,9 @@
 // assets/menuOptions.ts
 
 import { extractFromI18n } from '../utils/functions';
-import type { MenuOption } from '../types/types';
+import type { MenuOption, LoginOption } from '../types/types';
 
-export const menuOptions: Record<string, MenuOption> = {
+export const menuConfig: Record<string, MenuOption> = {
     'Rebajas - Hombre - Hasta 50%': {
         steps: [
             {
@@ -140,4 +140,16 @@ export const menuOptions: Record<string, MenuOption> = {
         expectedUrl: extractFromI18n('menu.urlEsperadaMujerRebajasHasta40'),
         title: extractFromI18n('menu.tituloMujerRebajasHasta40'),
     }
+};
+
+export const loginConfig: Record<string, LoginOption> = {
+    default: {
+        loginUrl: extractFromI18n('login.loginUrl'),
+        loginTitle: extractFromI18n('login.loginTitle'),
+        loggedUrl: extractFromI18n('login.loggedUrl'),
+        loggedTitle: extractFromI18n('login.loggedTitle'),
+        emailLabel: extractFromI18n('login.emailLabel'),
+        passwordLabel: extractFromI18n('login.passwordLabel'),
+        loginButton: extractFromI18n('login.loginButton'),
+    },
 };

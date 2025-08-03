@@ -1,5 +1,6 @@
 // pages/MenuPage.ts
 import { Page, test } from '@playwright/test';
+import { menuConfig } from '../assets/config';
 import type {
     LanguageCode,
     MenuOption,
@@ -11,9 +12,9 @@ export class MenuPage {
     readonly options: Record<string, MenuOption>;
     readonly locale: LanguageCode;
 
-    constructor(page: Page, options: Record<string, MenuOption>) {
+    constructor(page: Page) {
         this.page = page;
-        this.options = options;
+        this.options = menuConfig;
         this.locale = (test.info().project.use.locale as LanguageCode) ?? 'es';
     }
 
@@ -38,7 +39,7 @@ export class MenuPage {
         const { steps } = this.options[option];
 
         for (const step of steps) {
-            await this.page.waitForTimeout(100);
+            await this.page.waitForTimeout(150);
 
             const locator = this.getLocator(step);
             await locator.waitFor({ state: 'visible' });
