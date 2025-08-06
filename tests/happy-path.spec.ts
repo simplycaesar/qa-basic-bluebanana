@@ -30,9 +30,7 @@ test.describe('Proceso de compra', () => {
             await page.getByRole('button', { name: 'Permitir todas' }).click();
             await page.getByRole('button', { name: 'Comenzar pedido' }).click();
         })
-
     })
-
 })
 
 

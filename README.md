@@ -11,7 +11,7 @@ Este repositorio contiene una suite de pruebas altamente escalable y parametriza
 - 🌍 Test en múltiples **idiomas** (`es`, `en`, ...).
 - 📱 Compatibilidad con **múltiples dispositivos** (desktop y mobile).
 - 🧩 Configuración de **navegadores cruzados**: Chrome, Safari, Firefox.
-- 🧪 Control granular de rutas, títulos, URLs esperadas y locators vía `i18n` y `menuOptions`.
+- 🧪 Control granular de rutas, títulos, URLs esperadas y locators a través del archivo de configuración y del i18n.
 
 ### 🏗️ Escalabilidad
 
