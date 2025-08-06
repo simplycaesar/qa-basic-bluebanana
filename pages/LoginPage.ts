@@ -1,8 +1,7 @@
 // pages/LoginPage.ts
 
-import { Page, expect, test } from '@playwright/test';
+import { Page, test } from '@playwright/test';
 import type { LanguageCode, LoginOption } from '../types/types';
-import { extractFromI18n } from '../utils/functions';
 import { loginConfig } from '../assets/config';
 
 export class LoginPage {
